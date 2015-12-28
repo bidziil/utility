@@ -1,4 +1,4 @@
-package org.bidziil.configuration;
+package org.bidziil.utility.configuration;
 
 import com.google.common.base.Strings;
 import org.apache.log4j.Logger;

@@ -52,6 +52,8 @@
 		<version.ibm.db2jcc>3.68.61</version.ibm.db2jcc>
 		<version.ibm.jt400>5.1.0</version.ibm.jt400>
 		<version.net.jt400>8.5</version.net.jt400>
+		<version.reflections>0.9.10</version.reflections>
+		<version.jcabi>1.1</version.jcabi>
 		<version.jython>2.7.0</version.jython>
 		<version.junit>4.11</version.junit>
 		<version.mockito>1.10.19</version.mockito>
@@ -91,7 +93,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>3.3</version>
 					<configuration>
 						<useIncrementalCompilation>false</useIncrementalCompilation>
 						<source>${version.java}</source>
@@ -250,6 +252,14 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.jcabi</groupId>
+			<artifactId>jcabi-manifests</artifactId>
+		</dependency>
 	</dependencies>
 
 
@@ -394,6 +404,16 @@
 						<artifactId>commons-logging</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.reflections</groupId>
+				<artifactId>reflections</artifactId>
+				<version>${version.reflections}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jcabi</groupId>
+				<artifactId>jcabi-manifests</artifactId>
+				<version>${version.jcabi}</version>
 			</dependency>
 			
 			<dependency>

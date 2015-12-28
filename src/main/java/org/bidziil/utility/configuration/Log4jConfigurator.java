@@ -1,4 +1,4 @@
-package org.bidziil.configuration;
+package org.bidziil.utility.configuration;
 
 import java.io.File;
 import java.net.URISyntaxException;
